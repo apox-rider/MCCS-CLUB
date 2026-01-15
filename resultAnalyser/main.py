@@ -41,3 +41,5 @@ print(min(student['score'] for student in studentDetails))
 # Display for Highest score
 print(average)
 
+
+
