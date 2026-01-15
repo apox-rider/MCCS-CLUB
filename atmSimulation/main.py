@@ -8,7 +8,9 @@ def menu():
     print("4.Exit")
 
 def check_balance():
-     print(totalBalance)
+     print("Calculating....")
+     time.sleep(2)
+     print(f"Your balance is {totalBalance}")
 
 def make_deposit():  
     global totalBalance 
