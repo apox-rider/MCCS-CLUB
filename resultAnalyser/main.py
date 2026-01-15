@@ -30,7 +30,7 @@ elif no>0:
 
 
 # Average calc
-count=len(studentDetails)
+count=len(studentDetails )
 total=sum(student['score'] for student in studentDetails)
 average=total/count
 
