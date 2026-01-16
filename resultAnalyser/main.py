@@ -49,6 +49,9 @@ try:
             print("Credentials added")
             time.sleep(3)
     print("Loading Calculations...")
+    time.sleep(2)
+    print("Evaluating highest score, lowest and average score.... ")
+    time.sleep(3)
     scoreDisplay()
     average()
 except ValueError:
