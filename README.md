@@ -32,13 +32,13 @@ When in the directory folder ,run: python3 validator.py
 
     ⭐️The project has got two functions which are called  ; 
     <div>
-        -the average()
+-the average()
             a.It calculates the total from the input scores 
             b.It counts the number of students
             c.It carries the formula to calculate the average which it solves using the variables of total obtained and the counts of number of students
             d.It prints the average score  
 
-        -scoreDisplay()
+-scoreDisplay()
             a.It conditionally identifies scores depending on the user input.
             b.It considers the first input as the reference for obtaioning the lowest score and the highest score 
             c.It prints the finall data of the lowest score and the highest score
@@ -51,22 +51,22 @@ When in the directory folder ,run: python3 validator.py
      
     ⭐️The project has got five functions which are called  ; 
     <div>
-        -the menu()
+-the menu()
             It prints the features included in the menu depending on user demands
 
-        -check_balance()
+-check_balance()
             It prints the value of the present total balance
 
-        -make_deposit()
+-make_deposit()
             a. It updates the value of the total balance by adding positive amount eliminating errors of the user input like the if ammount is 0 or -ve , it handles the errors 
             b. It updates the value of the totalBalalnce 
             
-        -make_withdrawal()
+-make_withdrawal()
             a. It demands input of ammount the user wants to withdraw
             b. The conditionals handle the invalid amount other than the ammount greater than 0
             c. It updates totalAmount buy deducting from the total balance 
 
-        -exit()
+-exit()
             prints to notify user for the program break if the user wants to end it
     </div>
 
