@@ -1,13 +1,13 @@
-<!-- Problems solved -->
+**Problems solved** 
 1. Students Result Analyzer
 2. Simple ATM Simulation
 3. Number Pattern Generator
 4. Password Validator
 
-<!-- Language used -->
+**Language used**;
     PYTHON
 
-<!-- How to run the program -->
+**How to run the program** 
 PROGRAM RUNNING IN TERMINAL
 1. Students Result Analyzer
 When in the directory folder ,run: python3 analyser.py
@@ -21,7 +21,7 @@ When in the directory folder ,run: python3 generator.py
 4. Password Validator
 When in the directory folder ,run: python3 validator.py
 
-<!-- Explanation of my Logic -->
+**Explanation of my Logic** 
 1. Students Result Analyzer
     Logic: 
     ⭐️It has the varriables that store arrays of the student details; the name and scores 
@@ -81,5 +81,7 @@ When in the directory folder ,run: python3 validator.py
 
     ⭐️The password validator program has a single function which is the password_Checker() thatdemands user input and checks the length of input which should have 8 or more characters using conditionals and then on verification , checks for presence of a number within the charactors to conclude print as valid if both conditions are met or invalid if either or all conditions arent met which in the end is printed out whether valid or invalid
 
-<!-- Logic explanation end -->
+**NAME: AVITH RWEGOSHORA APOLINARY**
+**COURSE: DIPLOMA IN COMPUTER SCIENCE**
+**MUST**
              
