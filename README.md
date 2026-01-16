@@ -22,8 +22,8 @@ When in the directory folder ,run: python3 generator.py
 When in the directory folder ,run: python3 validator.py
 
 **Explanation of my Logic** 
-1. Students Result Analyzer
-    Logic: 
+1. Students Result Analyzer<br>
+    Logic: <br>
     ⭐️It has the varriables that store arrays of the student details; the name and scores 
 
     ⭐️It has input section for the class number of students
@@ -31,6 +31,7 @@ When in the directory folder ,run: python3 validator.py
     ⭐️It has got a loop that is limited to the number of students in the class to register names and the scores
 
     ⭐️The project has got two functions which are called  ; 
+    <div>
         -the average()
             a.It calculates the total from the input scores 
             b.It counts the number of students
@@ -41,14 +42,15 @@ When in the directory folder ,run: python3 validator.py
             a.It conditionally identifies scores depending on the user input.
             b.It considers the first input as the reference for obtaioning the lowest score and the highest score 
             c.It prints the finall data of the lowest score and the highest score
+</div>
 
-
-2. Simple ATM Simulation
-    Logic: 
+2. Simple ATM Simulation<br>
+    Logic: <br>
      
     ⭐️It has the variable that store balance data starting with the initial value of 10000
      
     ⭐️The project has got five functions which are called  ; 
+    <div>
         -the menu()
             It prints the features included in the menu depending on user demands
 
@@ -66,18 +68,19 @@ When in the directory folder ,run: python3 validator.py
 
         -exit()
             prints to notify user for the program break if the user wants to end it
+    </div>
 
     ⭐️Its logically arranged using if-else statements which are enclosed with the while loop to keep the menu function that provide wide options for the user input and operation as well as choice
 
 
-3. Number Pattern Generator
-    Logic:
+3. Number Pattern Generator<br>
+    Logic:<br>
 
     ⭐️It is assembled with nested for loops to organise rows in outer loop and fills per row in inner for loop . The try-except handles the vallue errors , within the while loop 
 
 
-4. Password Validator
-    Logic:
+4. Password Validator<br>
+    Logic:<br>
 
     ⭐️The password validator program has a single function which is the password_Checker() thatdemands user input and checks the length of input which should have 8 or more characters using conditionals and then on verification , checks for presence of a number within the charactors to conclude print as valid if both conditions are met or invalid if either or all conditions arent met which in the end is printed out whether valid or invalid
 
