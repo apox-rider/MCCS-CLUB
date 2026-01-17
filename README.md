@@ -1,8 +1,8 @@
 **Problems solved** 
-1. Students Result Analyzer
-2. Simple ATM Simulation
-3. Number Pattern Generator
-4. Password Validator
+1. Students Result Analyzer.
+2. Simple ATM Simulation.
+3. Number Pattern Generator.
+4. Password Validator.
 
 **Language used**;
     PYTHON
