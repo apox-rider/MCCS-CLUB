@@ -2,7 +2,9 @@ import time
 
 studentDetails=[]
 scores=[]
-print("Welcome to Student Analyzer")
+passedStudents=[]
+failedStudents=[]
+print("Welcome to Student Management System")
 totalStudents=int(input("Enter the number of students in your class : "))
 
 def average():
@@ -11,19 +13,21 @@ def average():
     av=total/count
     print(f"Average Score: {av}")
 
-def scoreDisplay():
-    if not scores:
-        print("No scores found ")
-    else:
-        lowestScore=scores[0]
-        highestScore=scores[0]
-        for num in scores[1:]:
-            if num<lowestScore:
-                lowestScore=num
-            elif num>highestScore:
-                highestScore=num
-        print(f"Highest Score: {highestScore}")
-        print(f"Lowest Score: {lowestScore}")
+def haspassed():
+    if score>=50:
+        passed=details["name"]
+        passedStudents.append(passed)
+
+def hasfailed():
+    if score<50:
+        failed=details["name"]
+        failedStudents.append(failed)
+def highestScorer():
+     highestscore =details["score"]
+     for num in details["score"]:
+         if num>highestscore:
+             print (f"The highest scorer is {details['name']}.")
+
 try:
     if totalStudents<0:
         print("Number of students can only be positive, please re-fill")
@@ -47,14 +51,17 @@ try:
             totalStudents-=1
             scores.append(score)
             studentDetails.append(details)
+            haspassed()
+            hasfailed()
             print("Credentials added")
             time.sleep(3)
     print("Loading Calculations...")
     time.sleep(2)
-    print("Evaluating highest score, lowest and average score.... ")
+    print("Evaluating average score and highestscorer.... ")
     time.sleep(3)
-    scoreDisplay()
     average()
+    highestScorer()
+
 except ValueError:
     print("Invalid input")
  
