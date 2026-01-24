@@ -14,19 +14,29 @@ def average():
     print(f"Average Score: {av}")
 
 def haspassed():
-    if score>=50:
-        passed=details["name"]
-        passedStudents.append(passed)
+    for student in studentDetails:
+        if student["score"]>=50:
+            passed=student["name"]
+            passedStudents.append(passed)
+        else:
+            print("None passed")
+    print(passedStudents)
 
 def hasfailed():
-    if score<50:
-        failed=details["name"]
-        failedStudents.append(failed)
+    for student in studentDetails:
+        if student["score"]<50:
+            failed=student["name"]
+            failedStudents.append(failed)
+        else:
+            print("None failed")
+    print(failedStudents)
+        
 def highestScorer():
-     highestscore =details["score"]
-     for num in details["score"]:
-         if num>highestscore:
-             print (f"The highest scorer is {details['name']}.")
+     for student in studentDetails:
+         if  student["score"]==max(scores):
+            print (f"The highest scorer is  {student["name"]}.")
+         else:
+             print(False)
 
 try:
     if totalStudents<0:
@@ -51,10 +61,10 @@ try:
             totalStudents-=1
             scores.append(score)
             studentDetails.append(details)
-            haspassed()
-            hasfailed()
             print("Credentials added")
             time.sleep(3)
+        haspassed()
+        hasfailed()
     print("Loading Calculations...")
     time.sleep(2)
     print("Evaluating average score and highestscorer.... ")
