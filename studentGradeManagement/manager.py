@@ -18,25 +18,19 @@ def haspassed():
         if student["score"]>=50:
             passed=student["name"]
             passedStudents.append(passed)
-        else:
-            print("None passed")
-    print(passedStudents)
+    print(f"The students who passed are: {passedStudents}")
 
 def hasfailed():
     for student in studentDetails:
         if student["score"]<50:
             failed=student["name"]
             failedStudents.append(failed)
-        else:
-            print("None failed")
-    print(failedStudents)
+    print(f"The students who failed are : {failedStudents}")
         
 def highestScorer():
      for student in studentDetails:
          if  student["score"]==max(scores):
             print (f"The highest scorer is  {student["name"]}.")
-         else:
-             print(False)
 
 try:
     if totalStudents<0:
