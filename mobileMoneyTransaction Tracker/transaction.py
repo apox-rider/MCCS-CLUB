@@ -45,3 +45,12 @@ try:
 except ValueError:
     print("Input Error during Entry")
 
+
+
+
+
+# sorted()
+# list()
+# map()
+# filter()
+
