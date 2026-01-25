@@ -28,7 +28,7 @@ try:
     am5=min(expenseAmount)
 
     # print(totalExpenses)
-    
+
     balance=totalIncome-totalExpenses
     transactionList=expenseAmount.append(incomeAmount)
     totalTransaction=len(incomeAmount)+len(expenseAmount)
@@ -53,7 +53,9 @@ except ValueError:
 
 
 # sorted()
+
 # list()
+
 # map()
 # filter()
 # people=[]
