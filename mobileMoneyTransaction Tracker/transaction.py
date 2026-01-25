@@ -20,11 +20,15 @@ try:
             expenseAmount.append(expense)
             nom-=1
             totalExpenses=sum(expenseAmount)
+
     # print(totalIncome)
     # print(expenseAmount)
+
     am3=max(expenseAmount)
     am5=min(expenseAmount)
+
     # print(totalExpenses)
+    
     balance=totalIncome-totalExpenses
     transactionList=expenseAmount.append(incomeAmount)
     totalTransaction=len(incomeAmount)+len(expenseAmount)
