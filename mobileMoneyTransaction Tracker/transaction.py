@@ -59,6 +59,7 @@ except ValueError:
 # map()
 
 # filter()
+
 # people=[]
 # sorter_people=sorted(people, key=lambda x:x["age"])
 # filter_people=list(filter(lambda x:x%0,people))
