@@ -87,7 +87,7 @@ When in the directory folder ,run: python3 validator.py
 4. QrCode Generator<br>
     Logic:<br>
 
-      ⭐️The qrcode generator generates the qrcode on input of the a link . As long as the url is valid, the qrcode generated helps derive and open directly the particular website . 
+      ⭐️The qrcode generator generates the qrcode on input of the a link . As long as the url is valid, the qrcode generated helps derive and open directly the particular website  . 
 
  
              

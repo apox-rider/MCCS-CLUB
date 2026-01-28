@@ -12,4 +12,6 @@ def generate_qr_code(data, filename):
     img = qr.make_image(fill_color="black", back_color="white")
     img.save(filename)
 
-generate_qr_code()  
+generate_qr_code(
+    # "url"
+    )  
