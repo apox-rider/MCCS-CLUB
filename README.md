@@ -67,7 +67,7 @@ When in the directory folder ,run: python3 validator.py
             c. It updates totalAmount buy deducting from the total balance .
 
 -exit()<br>
-            prints to notify user for the program break if the user wants to end it
+            prints to notify user for the program break if the user wants to end it.
     </div>
 
       ⭐️Its logically arranged using if-else statements which are enclosed with the while loop to keep the menu function that provide wide options for the user input and operation as well as choice
