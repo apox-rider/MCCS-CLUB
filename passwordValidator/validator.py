@@ -4,7 +4,7 @@ def password_Checker():
         password = input("Enter a password : ")
         if len(password.strip())>=8:
             time.sleep(2)
-            print("Password length confirmed ")
+            print("Password length confirmed .")
             time.sleep(2)
             print("Checking if password has number ...")
             hasNumber=any(char.isdigit() for char in password)
