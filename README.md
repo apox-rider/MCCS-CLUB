@@ -62,7 +62,7 @@ When in the directory folder ,run: python3 validator.py
             b. It updates the value of the totalBalalnce 
             
 -make_withdrawal()<br>
-            a. It demands input of ammount the user wants to withdraw
+            a. It demands input of ammount the user wants to withdraw.
             b. The conditionals handle the invalid amount other than the ammount greater than 0
             c. It updates totalAmount buy deducting from the total balance 
 
