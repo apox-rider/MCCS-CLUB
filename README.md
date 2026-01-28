@@ -84,5 +84,10 @@ When in the directory folder ,run: python3 validator.py
 
       ⭐️The password validator program has a single function which is the password_Checker() thatdemands user input and checks the length of input which should have 8 or more characters using conditionals and then on verification , checks for presence of a number within the charactors to conclude print as valid if both conditions are met or invalid if either or all conditions arent met which in the end is printed out whether valid or invalid
 
+4. QrCode Generator<br>
+    Logic:<br>
+
+      ⭐️The qrcode generator
+
  
              
