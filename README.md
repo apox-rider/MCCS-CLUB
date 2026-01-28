@@ -64,7 +64,7 @@ When in the directory folder ,run: python3 validator.py
 -make_withdrawal()<br>
             a. It demands input of ammount the user wants to withdraw.
             b. The conditionals handle the invalid amount other than the ammount greater than 0.
-            c. It updates totalAmount buy deducting from the total balance 
+            c. It updates totalAmount buy deducting from the total balance .
 
 -exit()<br>
             prints to notify user for the program break if the user wants to end it
