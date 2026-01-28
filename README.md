@@ -87,7 +87,7 @@ When in the directory folder ,run: python3 validator.py
 4. QrCode Generator<br>
     Logic:<br>
 
-      ⭐️The qrcode generator
+      ⭐️The qrcode generator generates the qrcode on input of the a link 
 
  
              
