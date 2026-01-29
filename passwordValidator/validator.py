@@ -10,11 +10,11 @@ def password_Checker():
             hasNumber=any(char.isdigit() for char in password)
             if hasNumber==True:
                 time.sleep(2)
-                print("Password valid")
+                print("Password valid ")
             else:
-                print("Password Invalid. Password should have atleast one number")
+                print("Password Invalid. Password should have atleast one number ")
         else:
-            print("Password Invalid. Length unsatisfactory")
+            print("Password Invalid. Length unsatisfactory ")
 
 
 print("Welcome to the password validator!!")
