@@ -54,7 +54,7 @@ if response == "yes":
     while True:
         menu()
         try:
-            choice = int(input("Make a choice (1-4): "))
+            choice = int(input("Make a choice (1-4):  "))
             
             if choice == 1:
                 check_balance()
