@@ -46,7 +46,7 @@ def exit():
 print("Welcome to the ATM Simulation")
 time.sleep(2)
 
-response = input("Want to open menu? (yes/no): ").strip().lower()
+response = input("Want to open menu?  (yes/no): ").strip().lower()
 if response == "yes":
     print("Menu loading...")
     time.sleep(10)
