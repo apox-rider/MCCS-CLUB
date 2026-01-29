@@ -67,7 +67,6 @@ except ValueError:
 # filter_people=list(filter(lambda x:x%0,people))
 
 
-
 # recursion
 
 # insertion algorithm
