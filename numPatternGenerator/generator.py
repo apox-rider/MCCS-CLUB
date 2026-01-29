@@ -1,6 +1,6 @@
 print ("Welcome to the number pattern generator ")
 choice=input("Want to preceed?(yes/no) ")
-if choice=="yes":
+if choice.strip()=="yes":
     while choice:
         try:
             n = int(input("Enter a number:  "))  
