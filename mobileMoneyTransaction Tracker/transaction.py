@@ -40,11 +40,11 @@ try:
     print(f"The highest transaction is {max(am3,am4)}")
     print(f"The lowest transaction is {min( am5,am6)}")
     if balance<0:
-            print("Warning!!!!!! Total expenses are greater than balance, beaware of your expenditure" )
+            print("Warning!!!!!! Total expenses are greater than balance, beaware of your expenditure " )
     elif balance>0:
-            print(f"Account balance is {totalIncome-totalExpenses} ")
+            print(f"Account balance is  {totalIncome-totalExpenses} ")
     elif balance==0:
-            print("Your account balance is zero(0)")
+            print("Your account balance is  zero(0)")
      
 except ValueError:
     print("Input Error during Entry")
