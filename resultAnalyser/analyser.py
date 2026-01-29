@@ -28,9 +28,9 @@ try:
     if totalStudents<0:
         print("Number of students can only be positive, please re-fill ")
     elif totalStudents==0:
-        print("The class is empty, no details to collect ")
+        print("The class is empty, no details to collect")
     elif totalStudents>0:
-        print(f"Your class has {totalStudents} students")
+        print(f"Your class has {totalStudents} students ")
         time.sleep(2)
         print("Count Saved Successfully")
         time.sleep(2)
