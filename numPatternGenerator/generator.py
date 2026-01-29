@@ -11,4 +11,4 @@ if choice.strip()=="yes":
         except ValueError:
             print("Input not number ")
 else:
-    print("Pattern generator closed " )
+    print("Pattern generator closed . " )
