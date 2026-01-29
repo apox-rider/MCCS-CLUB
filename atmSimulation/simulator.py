@@ -70,7 +70,7 @@ if response == "yes":
         except ValueError:
             print("Please enter number 1-4 ")
 else:
-    print("ATM Closed. Welcome again!")
+    print("ATM Closed. Welcome again! ")
 
 
  

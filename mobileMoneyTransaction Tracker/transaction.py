@@ -3,7 +3,7 @@ incomeAmount=[]
 totalExpenses=[]
 expenseAmount=[]
 
-numberOfIncomeEntry=int(input("Input number of income entry:  "))
+numberOfIncomeEntry=int(input("Input number of income entry: "))
 count=numberOfIncomeEntry
 try:
     while count>0:
