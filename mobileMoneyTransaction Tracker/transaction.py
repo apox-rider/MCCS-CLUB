@@ -13,7 +13,7 @@ try:
         totalIncome=sum(incomeAmount)
     
     
-    numberOfExpenditure=int(input("Input number of expense transactions:  "))
+    numberOfExpenditure=int(input("Input number of expense transactions: "))
     nom=numberOfExpenditure    
     while nom>0:
             expense=int(input( "Expense ammount:  "))
