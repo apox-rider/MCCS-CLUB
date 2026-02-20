@@ -25,7 +25,7 @@ try:
     time.sleep(5)
 
     print("Register present student names")
-    while noPresent>1:
+    while noPresent>0:
         time.sleep(3)
         name=input("Input student name: ")
         present.append(name)
@@ -38,7 +38,7 @@ try:
     time.sleep(5)
 
     print("Register absent student names")
-    while noAbsent>1:
+    while noAbsent>0:
         time.sleep(3)
         absname=input("Input Absentee: ")
         absent.append(absname)
