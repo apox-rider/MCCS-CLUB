@@ -59,5 +59,10 @@ def programme():
         print("Invalid input")
         programme()
 
-
-programme()
+print("Welcome to Attendance checker")
+time.sleep(3)
+run=input("Want to resister analyse attendance? (yes/no/exit)")
+if run.lower().strip()=="yes":
+    programme()
+elif run.lower().strip()=="no"|"exit":
+    print("Thanks for using the service , Welcome Again")
