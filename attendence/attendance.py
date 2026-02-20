@@ -57,7 +57,7 @@ def programme():
         attendance() 
     except ValueError:
         print("Invalid input")
-        programme()
+        programme() 
  
 print("Welcome to Attendance checker!")
 time.sleep(3)
