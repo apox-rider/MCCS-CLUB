@@ -45,7 +45,7 @@ def programme():
             absent.append(absname)
             noAbsent-=1
             time.sleep(3)
-            print(f"{absname} recorded")
+            print(f"{absname} recorded") 
 
         time.sleep(5)
         print("Absentees registered!")
