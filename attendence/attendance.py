@@ -49,7 +49,7 @@ def programme():
 
         time.sleep(5)
         print("Absentees registered!") 
-        time.sleep(5)
+        time.sleep(5) 
 
         print("Analysing...")  
         time.sleep(4)
