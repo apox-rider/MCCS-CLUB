@@ -54,7 +54,7 @@ def programme():
         print("Analysing...")
         time.sleep(4)
 
-        attendance()
+        attendance() 
     except ValueError:
         print("Invalid input")
         programme()
