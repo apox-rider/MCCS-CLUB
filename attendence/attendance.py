@@ -48,7 +48,7 @@ def programme():
             print(f"{absname} recorded") 
 
         time.sleep(5)
-        print("Absentees registered!")
+        print("Absentees registered!") 
         time.sleep(5)
 
         print("Analysing...")
