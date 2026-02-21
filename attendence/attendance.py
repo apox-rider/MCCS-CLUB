@@ -33,7 +33,7 @@ def programme():
             noPresent-=1
             time.sleep(3)
             print(f"{name} registered")
-
+ 
         time.sleep(5)
         print("Present students registered!")
         time.sleep(5)
