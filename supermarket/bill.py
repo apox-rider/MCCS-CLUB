@@ -22,7 +22,7 @@ def record():
                 break
             else:
                 try:
-                    quantity=int(input("Input product quantity : "))
+                    quantity=int(input("Input product quantity : ")) 
                     units=input("Input product unit : ")
                     price=input("Input product unit price : ")
                     register={
