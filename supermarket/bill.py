@@ -55,17 +55,16 @@ def total():
         print("Initiating discount...")
         time.sleep(3)
         final=0.9*value
-        print(f"The total fixed ammount is {final}")
+        print(f"The total fixed ammount is {round(final,2)}")
     elif value>0:
-        print(f"The total fixed amount is {value}")
+        print(f"The total fixed amount is {round(value,2)}")
     else:
         print("No transaction detected")
 
 def receipt():
     time.sleep(3)
     print("Receipt")
-    print(f"You've bought {detailList} ")
-    datetime.now()
+    print(f"You've bought {detailList} at {datetime.now()}")
 
 
 
