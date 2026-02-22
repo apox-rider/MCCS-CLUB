@@ -1,6 +1,8 @@
 import time
 
 detailList=[]
+prices=[]
+items=[]
 
 def record():
     time.sleep(3)
@@ -13,17 +15,24 @@ def record():
         print("Type 'done' on finishing the product details")
         time.sleep(2)
         while fill:
-            product=input("Input product name")
+            product=input("Input product name : ")
             if product.lower().strip()=="done":
                 fill=False
                 break
             else:
-                price=input("Input product price")
+                quantity=int(input("Input product quantity : "))
+                price=input("Input product unit price : ")
                 register={
                     "name":product,
-                    "price":price
+                    "quantity":quantity,
+                    "price":price,
                 }
                 detailList.append(register)
+                prices.append(price*quantity)
+                items.append(product)
+                time.sleep(3)
+                print(f"Added {quantity} {product} to purchased list.")
+                time.sleep(3)
 
 
 print("Welcome to the supermarket shopping system!")
