@@ -1,4 +1,5 @@
 import time
+from datetime import datetime
 
 detailList=[]
 prices=[]
@@ -9,8 +10,8 @@ def record():
     print("Initializing system...")
     time.sleep(4)
     print("ACTIVITIES")
-    activity=input("A:Input product details :\n B:Exit ")
-    if activity.lower().strip()=="A":
+    activity=input("A:Input product details :\nB:Exit ")
+    if activity.upper().strip()=="A":
         fill=True
         print("Type 'done' on finishing the product details")
         time.sleep(2)
@@ -33,6 +34,17 @@ def record():
                 time.sleep(3)
                 print(f"Added {quantity} {product} to purchased list.")
                 time.sleep(3)
+        receipt()            
+    elif activity.upper().strip=="B":
+        close=True
+        time.sleep(3)
+        while close:
+            break
+    else:
+        print("invalid option. ")
+        time.sleep(2)
+        print("System break!!")
+        
 
 def total():
     time.sleep(3)
@@ -48,12 +60,16 @@ def total():
         print("No transaction detected")
 
 def receipt():
+    time.sleep(3)
+    print("Receipt")
+    total()
+    datetime.now()
 
 
 
 print("Welcome to the supermarket shopping system!")
 time.sleep(3)
-permission=input("Want to proceed? (yes/no)")
+permission=input("Want to proceed? (yes/no) : ")
 if permission.lower().strip()=="yes":
     record()
     
