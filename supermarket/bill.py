@@ -36,7 +36,7 @@ def record():
                     items.append(product)
                     time.sleep(3)
                     print(f"Added {quantity}{units} of {product} to purchased list.")
-                    time.sleep(3) 
+                    time.sleep(3)  
                 except ValueError:
                     print("Invalid Input")
                     
