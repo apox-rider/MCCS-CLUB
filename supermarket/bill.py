@@ -21,21 +21,24 @@ def record():
                 fill=False
                 break
             else:
-                quantity=int(input("Input product quantity : "))
-                units=input("Input product unit : ")
-                price=input("Input product unit price : ")
-                register={
-                    "name":product,
-                    "quantity":f"{quantity} {units}",
-                    "price":price,
-                }
-                detailList.append(register)
-                all=int(price*quantity)
-                prices.append(all)
-                items.append(product)
-                time.sleep(3)
-                print(f"Added {quantity}{units} of {product} to purchased list.")
-                time.sleep(3) 
+                try:
+                    quantity=int(input("Input product quantity : "))
+                    units=input("Input product unit : ")
+                    price=input("Input product unit price : ")
+                    register={
+                        "name":product,
+                        "quantity":f"{quantity} {units}",
+                        "price":price,
+                    }
+                    detailList.append(register)
+                    all=int(price*quantity)
+                    prices.append(all)
+                    items.append(product)
+                    time.sleep(3)
+                    print(f"Added {quantity}{units} of {product} to purchased list.")
+                    time.sleep(3) 
+                except ValueError:
+                    print("Invalid Input")
                     
     elif activity.upper().strip()=="B":
         close=True
