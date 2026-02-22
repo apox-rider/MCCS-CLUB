@@ -10,8 +10,8 @@ def record():
     print("Initializing system...")
     time.sleep(4)
     print("ACTIVITIES")
-    activity=input("A:Input product details :\nB:Exit ")
-    if activity.upper().strip()=="A":
+    activity=input("A:Input product details \nB:Exit \nOption : ")
+    if activity.strip().capitalize()=="A":
         fill=True
         print("Type 'done' on finishing the product details")
         time.sleep(2)
@@ -22,27 +22,29 @@ def record():
                 break
             else:
                 quantity=int(input("Input product quantity : "))
+                units=input("Input product unit : ")
                 price=input("Input product unit price : ")
                 register={
                     "name":product,
-                    "quantity":quantity,
+                    "quantity":quantity + units,
                     "price":price,
                 }
                 detailList.append(register)
-                prices.append(price*quantity)
+                all=int(price*quantity)
+                prices.append(all)
                 items.append(product)
                 time.sleep(3)
-                print(f"Added {quantity} {product} to purchased list.")
-                time.sleep(3)
-        receipt()            
-    elif activity.upper().strip=="B":
+                print(f"Added {quantity}{units} of {product} to purchased list.")
+                time.sleep(3) 
+                    
+    elif activity.upper().strip()=="B":
         close=True
         time.sleep(3)
         while close:
             break
     else:
-        print("invalid option. ")
         time.sleep(2)
+        print("invalid option. ")
         print("System break!!")
         
 
@@ -62,7 +64,7 @@ def total():
 def receipt():
     time.sleep(3)
     print("Receipt")
-    total()
+    print(f"You've bought {detailList} ")
     datetime.now()
 
 
@@ -72,6 +74,8 @@ time.sleep(3)
 permission=input("Want to proceed? (yes/no) : ")
 if permission.lower().strip()=="yes":
     record()
+    receipt()
+    total()
     
 elif permission.lower().strip()=="no":
     time.sleep(3)
@@ -79,4 +83,4 @@ elif permission.lower().strip()=="no":
 else: 
     time.sleep(3)
     print("Invalid input , your options are (yes/no)")
-    record()
+    print(permission)
