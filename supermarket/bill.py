@@ -30,7 +30,7 @@ def record():
                         "quantity":f"{quantity} {units}",
                         "price":price,
                     }
-                    detailList.append(register)
+                    detailList.append(register) 
                     all=int(price*quantity)
                     prices.append(all)
                     items.append(product)
