@@ -27,7 +27,7 @@ def record():
                     price=input("Input product unit price : ")
                     register={
                         "name":product,
-                        "quantity":f"{quantity} {units}",
+                        "quantity":f"{quantity} {units}", 
                         "price":price,
                     }
                     detailList.append(register) 
