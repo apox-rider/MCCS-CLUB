@@ -34,6 +34,22 @@ def record():
                 print(f"Added {quantity} {product} to purchased list.")
                 time.sleep(3)
 
+def total():
+    time.sleep(3)
+    value=sum(prices)
+    if value>50000:
+        print("Initiating discount...")
+        time.sleep(3)
+        final=0.9*value
+        print(f"The total fixed ammount is {final}")
+    elif value>0:
+        print(f"The total fixed amount is {value}")
+    else:
+        print("No transaction detected")
+
+def receipt():
+
+
 
 print("Welcome to the supermarket shopping system!")
 time.sleep(3)
