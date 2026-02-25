@@ -4,7 +4,7 @@ studentDetails=[]
 scores=[]
 passedStudents=[]
 failedStudents=[]
-print("Welcome to Student Management System")
+print("Welcome to Student Management System ")
 totalStudents=int(input("Enter the number of students in your class : "))
 
 def average():
