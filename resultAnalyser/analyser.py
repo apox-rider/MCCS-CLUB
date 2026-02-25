@@ -12,7 +12,7 @@ def average():
     print(f"Average Score: {av}")
 
 def scoreDisplay():
-    if not scores:
+    if not scores: 
         print("No scores found ")
     else:
         lowestScore=scores[0]
