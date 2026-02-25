@@ -20,7 +20,7 @@ def haspassed():
             passedStudents.append(passed)
     print(f"The students who passed are: {passedStudents}")
 
-def hasfailed():
+def hasfailed(): 
     for student in studentDetails:
         if student["score"]<50:
             failed=student["name"]
