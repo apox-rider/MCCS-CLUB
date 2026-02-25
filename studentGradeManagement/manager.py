@@ -16,7 +16,7 @@ def average():
 def haspassed():
     for student in studentDetails:
         if student["score"]>=50:
-            passed=student["name"]
+            passed=student["name"] 
             passedStudents.append(passed)
     print(f"The students who passed are: {passedStudents}")
 
