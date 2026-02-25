@@ -13,7 +13,7 @@ def record():
     activity=input("A:Input product details \nB:Exit \nOption : ")
     if activity.strip().capitalize()=="A":
         fill=True
-        print("Type 'done' on finishing the product details")
+        print("Type 'done' after finishing the product details")
         time.sleep(2)
         while fill:
             product=input("Input product name : ")
