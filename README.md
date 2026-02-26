@@ -17,7 +17,7 @@ When in the directory folder ,run: python3 simulator.py
 
 3. Number Pattern Generator
 When in the directory folder ,run: python3 generator.py
-
+ 
 4. Password Validator
 When in the directory folder ,run: python3 validator.py
 
