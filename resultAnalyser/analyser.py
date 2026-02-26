@@ -9,7 +9,7 @@ def average():
     total=sum(student['score'] for student in studentDetails)
     count=len(studentDetails)
     av=total/count
-    print(f"Average Score: {av}")
+    print(f"Average Score: {av}") 
 
 def scoreDisplay():
     if not scores: 
