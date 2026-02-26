@@ -10,7 +10,7 @@ def average():
     count=len(studentDetails)
     av=total/count
     print(f"Average Score: {av}") 
-
+ 
 def scoreDisplay():
     if not scores: 
         print("No scores found ")
