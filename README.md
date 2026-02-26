@@ -7,7 +7,7 @@
 **Language used**;
     PYTHON
 
-**How to run the program**  
+**How to run the program**   
 PROGRAM RUNNING IN TERMINAL 
 1. Students Result Analyzer 
 When in the directory folder ,run: python3 analyser.py
