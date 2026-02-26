@@ -19,7 +19,7 @@ def scoreDisplay():
         highestScore=scores[0]
         for num in scores[1:]:
             if num<lowestScore:
-                lowestScore=num
+                lowestScore=num 
             elif num>highestScore:
                 highestScore=num
         print(f"Highest Score: {highestScore}")
