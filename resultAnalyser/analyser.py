@@ -32,7 +32,7 @@ try:
     elif totalStudents>0:
         print(f"Your class has {totalStudents} students ")
         time.sleep(2)
-        print("Count Saved Successfully")
+        print("Count Saved Successfully") 
         time.sleep(2)
         print("Preparing registration manual...")
         time.sleep(2) 
