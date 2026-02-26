@@ -23,7 +23,7 @@ def scoreDisplay():
             elif num>highestScore:
                 highestScore=num
         print(f"Highest Score: {highestScore}")
-        print(f"Lowest Score: {lowestScore}")
+        print(f"Lowest Score: {lowestScore}") 
 try:
     if totalStudents<0:
         print("Number of students can only be positive, please re-fill ")
