@@ -32,7 +32,7 @@ When in the directory folder ,run: python3 validator.py
 
       ⭐️The project has got two functions which are called  ; 
     <div>
--the average()<br>
+-the average()<br> 
             a.It calculates the total from the input scores 
             b.It counts the number of students
             c.It carries the formula to calculate the average which it solves using the variables of total obtained and the counts of number of students
