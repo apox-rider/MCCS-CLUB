@@ -5,7 +5,7 @@ scores=[]
 print("Welcome to Student Analyzer")
 totalStudents=int(input("Enter the number of students in your class : "))
 
-def average():
+def average(): 
     total=sum(student['score'] for student in studentDetails)
     count=len(studentDetails)
     av=total/count
