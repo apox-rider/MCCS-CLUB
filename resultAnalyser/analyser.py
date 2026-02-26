@@ -26,7 +26,7 @@ def scoreDisplay():
         print(f"Lowest Score: {lowestScore}") 
 try:
     if totalStudents<0:
-        print("Number of students can only be positive, please re-fill ")
+        print("Number of students can only be positive, please re-fill ") 
     elif totalStudents==0:
         print("The class is empty, no details to collect")
     elif totalStudents>0:
