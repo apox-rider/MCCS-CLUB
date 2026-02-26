@@ -35,7 +35,7 @@ try:
         print("Count Saved Successfully")
         time.sleep(2)
         print("Preparing registration manual...")
-        time.sleep(2)
+        time.sleep(2) 
         while totalStudents:
             name=input("Input Student's name:  ")
             time.sleep(2)
