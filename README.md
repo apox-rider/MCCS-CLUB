@@ -9,7 +9,7 @@
 
 **How to run the program** 
 PROGRAM RUNNING IN TERMINAL 
-1. Students Result Analyzer
+1. Students Result Analyzer 
 When in the directory folder ,run: python3 analyser.py
 
 2. Simple ATM Simulation
