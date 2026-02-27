@@ -1,5 +1,5 @@
 import pwd
-import crypt
+import hashlib
 import getpass
 
 def login():
@@ -10,7 +10,7 @@ def login():
         if crypted_passwd == 'x' or crypted_passwd == '*':
             raise ValueError('No support for shadow passwords')
         cleartext = getpass.getpass('Enter your password: ')
-        return crypt.crypt(cleartext, crypted_passwd) == crypted_passwd
+        return hashlib.crypt(cleartext, crypted_passwd) == crypted_passwd
     except KeyError:
         print('User not found.')
         return False
@@ -52,7 +52,7 @@ class PasswordCracker:
             crypted_passwd = user_info.sp_pwdp
             if crypted_passwd == 'x' or crypted_passwd == '*':
                 raise ValueError('No support for shadow passwords')
-            return crypt.crypt(password, crypted_passwd) == crypted_passwd
+            return hashlib.crypt(password, crypted_passwd) == crypted_passwd
         except KeyError:
             return False
     def bruteforce_passwords(self, password_list):
