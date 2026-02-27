@@ -32,7 +32,7 @@ def wifi_test_loop(target_ssid, password_list):
         profile = pywifi.Profile()
         profile.ssid = target_ssid
         profile.auth = const.AUTH_ALG_OPEN
-        profile.akm.append(const.AKM_TYPE_WPA2PSK) 
+        profile.akm.append(const.AKM_TYPE_WPA2PSK) # for most routers
         profile.cipher = const.CIPHER_TYPE_CCMP
         profile.key = password
 
