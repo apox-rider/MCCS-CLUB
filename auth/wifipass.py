@@ -78,33 +78,33 @@ def attempt_crack(target_ssid):
     return False
 
 def main():
-    print("=== PY-WIFI AUDITOR v1.0 ===")
+    print("=== P0X-WIFI AUDITOR v1.0 ===")
     
     # 1. Scan and List
     networks = scan_networks()
     if not networks:
         print("[-] No networks found. Ensure Wi-Fi is enabled.")
         return
+    else:
+        print("\nAvailable Networks:")
+        for i, ssid in enumerate(networks):
+            print(f"[{i}] {ssid}")
 
-    print("\nAvailable Networks:")
-    for i, ssid in enumerate(networks):
-        print(f"[{i}] {ssid}")
+        # 2. User Selection
+        try:
+            choice = int(input("\nSelect the ID of the network to crack: "))
+            target_ssid = networks[choice]
+        except (ValueError, IndexError):
+            print("[-] Invalid selection.")
+            return
 
-    # 2. User Selection
-    try:
-        choice = int(input("\nSelect the ID of the network to crack: "))
-        target_ssid = networks[choice]
-    except (ValueError, IndexError):
-        print("[-] Invalid selection.")
-        return
-
-    # 3. Execution
-    try:
-        found = attempt_crack(target_ssid)
-        if not found:
-            print("\n[-] Operation finished. No password was found.")
-    except KeyboardInterrupt:
-        print("\n\n[!] Operation stopped by user.")
+        # 3. Execution
+        try:
+            found = attempt_crack(target_ssid)
+            if not found:
+                print("\n[-] Operation finished. No password was found.")
+        except KeyboardInterrupt:
+            print("\n\n[!] Operation stopped by user.")
 
 if __name__ == "__main__":
     main()
