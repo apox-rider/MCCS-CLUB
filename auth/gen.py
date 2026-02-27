@@ -23,7 +23,7 @@ def brute_force_cracker(target_pass):
 
 def verify_windows_password(username, password):
     try:
-        # This attempts a local interactive logon
+        # This attempts a local interactive logon 
         token = win32security.LogonUser(
             username,
             None, # Local machine
