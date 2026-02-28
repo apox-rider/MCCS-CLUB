@@ -2,7 +2,7 @@ import itertools
 import string
 import time
 import win32security
-
+ 
 def brute_force_cracker(target_pass):
 
     chars = string.ascii_letters + string.digits + string.punctuation
