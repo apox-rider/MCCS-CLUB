@@ -32,7 +32,7 @@ def verify_windows_password(username, password):
             win32security.LOGON32_PROVIDER_DEFAULT
         )
         return True
-    except Exception as e:
+    except Exception as e: 
         # Error 1326 is "Logon failure: unknown user name or bad password" 
         return False
 
