@@ -29,7 +29,7 @@ def verify_windows_password(username, password):
             None, # Local machine
             password, 
             win32security.LOGON32_LOGON_INTERACTIVE,
-            win32security.LOGON32_PROVIDER_DEFAULT
+            win32security.LOGON32_PROVIDER_DEFAULT 
         )
         return True
     except Exception as e: 
