@@ -33,7 +33,7 @@ def verify_windows_password(username, password):
         )
         return True
     except Exception as e:
-        # Error 1326 is "Logon failure: unknown user name or bad password"
+        # Error 1326 is "Logon failure: unknown user name or bad password" 
         return False
 
 target = verify_windows_password()
