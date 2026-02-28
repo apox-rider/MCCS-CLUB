@@ -21,7 +21,7 @@ def brute_force_cracker(target_pass):
                 return guess, attempts, duration
     return None
 
-def verify_windows_password(username, password):
+def verify_windows_password(username, password): 
     try:
         # This attempts a local interactive logon 
         token = win32security.LogonUser(
