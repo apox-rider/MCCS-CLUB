@@ -27,7 +27,7 @@ def verify_windows_password(username, password):
         token = win32security.LogonUser(
             username,
             None, # Local machine
-            password,
+            password, 
             win32security.LOGON32_LOGON_INTERACTIVE,
             win32security.LOGON32_PROVIDER_DEFAULT
         )
