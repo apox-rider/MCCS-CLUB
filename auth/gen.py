@@ -40,4 +40,4 @@ target = verify_windows_password()
 result = brute_force_cracker(target)
 if result:
     print(f"Success! Password: {result[0]}")
-    print(f"Attempts: {result[1]} | Time: {result[2]:.2f}s")
+    print(f"Attempts: {result[1]} | Time: {result[2]:.2f}s") 
