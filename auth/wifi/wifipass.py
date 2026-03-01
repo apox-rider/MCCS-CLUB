@@ -95,7 +95,7 @@ def main():
             choice = int(input("\nSelect the ID of the network to crack: "))
             target_ssid = networks[choice]
         except (ValueError, IndexError): 
-            return
+            return  
  
         # 3. Execution  
         try:
