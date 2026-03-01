@@ -91,7 +91,7 @@ def main():
             print(f"[{i}] {ssid}")
  
         # 2. User Selection 
-        try:  
+        try:   
             choice = int(input("\nSelect the ID of the network to crack: "))
             target_ssid = networks[choice]
         except (ValueError, IndexError): 
