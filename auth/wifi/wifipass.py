@@ -98,7 +98,7 @@ def main():
             return  
  
         # 3. Execution  
-        try:
+        try: 
             found = attempt_crack(target_ssid)
             if not found: 
                 print("\n[-] Operation finished. No password was found.")
