@@ -89,7 +89,7 @@ def main():
         print("\nAvailable Networks:")
         for i, ssid in enumerate(networks):
             print(f"[{i}] {ssid}")
-
+ 
         # 2. User Selection
         try:
             choice = int(input("\nSelect the ID of the network to crack: "))
