@@ -104,6 +104,6 @@ def main():
                 print("\n[-] Operation finished. No password was found.")
         except KeyboardInterrupt:
             print("\n\n[!] Operation stopped by user.")
-
+ 
 if __name__ == "__main__":  
     main()
