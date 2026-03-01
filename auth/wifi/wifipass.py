@@ -78,7 +78,7 @@ def attempt_crack(target_ssid):
     return False
  
 def main():
-    print("=== P0X-WIFI AUDITOR v1.0 ===")
+    print("=== P0X-WIFI AUDITOR v1.0 ===") 
      
     # 1. Scan and List
     networks = scan_networks()
