@@ -101,7 +101,7 @@ def main():
         # 3. Execution
         try:
             found = attempt_crack(target_ssid)
-            if not found:
+            if not found: 
                 print("\n[-] Operation finished. No password was found.")
         except KeyboardInterrupt:
             print("\n\n[!] Operation stopped by user.")
