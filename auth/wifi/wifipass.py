@@ -105,5 +105,5 @@ def main():
         except KeyboardInterrupt:
             print("\n\n[!] Operation stopped by user.")
 
-if __name__ == "__main__": 
+if __name__ == "__main__":  
     main()
