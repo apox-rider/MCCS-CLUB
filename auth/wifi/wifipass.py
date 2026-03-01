@@ -87,7 +87,7 @@ def main():
         return
     else:
         print("\nAvailable Networks:")
-        for i, ssid in enumerate(networks):
+        for i, ssid in enumerate(networks): 
             print(f"[{i}] {ssid}")
  
         # 2. User Selection
