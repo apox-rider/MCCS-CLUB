@@ -82,7 +82,7 @@ def main():
      
     # 1. Scan and List
     networks = scan_networks()
-    if not networks:
+    if not networks: 
         print("[-] No networks found. Ensure Wi-Fi is enabled.")
         return
     else:
