@@ -76,7 +76,7 @@ def attempt_crack(target_ssid):
             time.sleep(0.1)
             
     return False
-
+ 
 def main():
     print("=== P0X-WIFI AUDITOR v1.0 ===")
     
