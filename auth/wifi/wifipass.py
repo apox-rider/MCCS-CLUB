@@ -98,7 +98,7 @@ def main():
             print("[-] Invalid selection.")
             return
 
-        # 3. Execution
+        # 3. Execution 
         try:
             found = attempt_crack(target_ssid)
             if not found: 
