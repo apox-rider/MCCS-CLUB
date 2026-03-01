@@ -86,7 +86,7 @@ def main():
         print("[-] No networks found. Ensure Wi-Fi is enabled.")
         return
     else:
-        print("\nAvailable Networks:")
+        print("\nAvailable Networks:") 
         for i, ssid in enumerate(networks): 
             print(f"[{i}] {ssid}")
  
