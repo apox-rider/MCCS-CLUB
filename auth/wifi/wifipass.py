@@ -97,7 +97,7 @@ def main():
         except (ValueError, IndexError):
             print("[-] Invalid selection.")
             return
-
+ 
         # 3. Execution 
         try:
             found = attempt_crack(target_ssid)
