@@ -32,7 +32,7 @@ def record():
                     }
                     detailList.append(register) 
                     all=int(price*quantity)
-                    prices.append(all)
+                    prices.append(all) 
                     items.append(product)
                     time.sleep(3)
                     print(f"Added {quantity}{units} of {product} to purchased list.")
