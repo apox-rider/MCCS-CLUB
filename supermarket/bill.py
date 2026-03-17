@@ -39,7 +39,7 @@ def record():
                     time.sleep(3)  
                 except ValueError:
                     print("Invalid Input")
-                    
+                     
     elif activity.upper().strip()=="B":  
         close=True
         time.sleep(3)
