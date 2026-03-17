@@ -44,7 +44,7 @@ def record():
         close=True
         time.sleep(3)
         while close: 
-            break
+            break 
     else:
         time.sleep(2)
         print("invalid option. ")
