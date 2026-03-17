@@ -46,7 +46,7 @@ def record():
         while close: 
             break 
     else:
-        time.sleep(2)
+        time.sleep(2) 
         print("invalid option. ")
         print("System break!!")
          
