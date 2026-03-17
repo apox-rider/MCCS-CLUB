@@ -48,7 +48,7 @@ def record():
     else:
         time.sleep(2) 
         print("invalid option. ")
-        print("System break!!")
+        print("System break!!") 
          
 
 def total():
