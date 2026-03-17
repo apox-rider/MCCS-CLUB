@@ -43,7 +43,7 @@ def record():
     elif activity.upper().strip()=="B":  
         close=True
         time.sleep(3)
-        while close:
+        while close: 
             break
     else:
         time.sleep(2)
