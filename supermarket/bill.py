@@ -24,7 +24,7 @@ def record():
                 try:
                     quantity=int(input("Input product quantity : ")) 
                     units=input("Input product unit : ")
-                    price=input("Input product unit price : ")
+                    price=input("Input product unit price : ") 
                     register={
                         "name":product,
                         "quantity":f"{quantity} {units}", 
