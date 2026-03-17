@@ -50,7 +50,7 @@ def record():
         print("invalid option. ")
         print("System break!!") 
          
-
+ 
 def total():
     time.sleep(3) 
     value=sum(prices)
