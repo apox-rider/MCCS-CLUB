@@ -52,7 +52,7 @@ def record():
         
 
 def total():
-    time.sleep(3)
+    time.sleep(3) 
     value=sum(prices)
     if value>50000:
         print("Initiating discount...")
