@@ -69,7 +69,7 @@ def receipt():
     print("Receipt")
     print(f"You've bought {detailList} at {datetime.now()}")
 
-
+ 
 
 print("Welcome to the supermarket shopping system!")
 time.sleep(3)
