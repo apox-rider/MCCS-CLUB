@@ -64,7 +64,7 @@ def total():
     else:
         print("No transaction detected")
 
-def receipt():
+def receipt(): 
     time.sleep(3)
     print("Receipt")
     print(f"You've bought {detailList} at {datetime.now()}")
