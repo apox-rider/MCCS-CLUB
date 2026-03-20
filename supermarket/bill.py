@@ -72,7 +72,7 @@ def receipt():
   
 
 print("Welcome to the supermarket shopping system!")
-time.sleep(3)
+time.sleep(3) 
 permission=input("Want to proceed? (yes/no) : ") 
 if permission.lower().strip()=="yes":
     record()
