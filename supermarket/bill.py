@@ -70,7 +70,7 @@ def receipt():
     print(f"You've bought {detailList} at {datetime.now()}")
 
    
-
+ 
 print("Welcome to the supermarket shopping system!")
 time.sleep(3) 
 permission=input("Want to proceed? (yes/no) : ") 
@@ -86,5 +86,3 @@ else:
     time.sleep(3)
     print("Invalid input , your options are (yes/no)")
     print(permission) 
-
-      
