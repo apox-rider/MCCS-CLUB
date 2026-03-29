@@ -70,7 +70,7 @@ def receipt():
     print(f"You've bought {detailList} at {datetime.now()}")
 
    
- 
+    
 print("Welcome to the supermarket shopping system!")
 time.sleep(3) 
 permission=input("Want to proceed? (yes/no) : ") 
@@ -79,7 +79,7 @@ if permission.lower().strip()=="yes":
     receipt()
     total()
     
-elif permission.lower().strip()=="no":
+elif permission.lower().strip()=="no": 
     time.sleep(3)
     print("Welcome Again")
 else:  
