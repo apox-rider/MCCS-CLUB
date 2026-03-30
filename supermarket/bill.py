@@ -6,7 +6,7 @@ prices=[]
 items=[]
  
 def record():
-    time.sleep(3)
+    time.sleep(3) 
     print("Initializing system...")
     time.sleep(4) 
     print("ACTIVITIES")
