@@ -10,7 +10,7 @@ def record():
     print("Initializing system...")
     time.sleep(4) 
     print("ACTIVITIES")
-    activity=input("A:Input product details \nB:Exit \nOption : ")
+    activity=input("A:Input product details \nB:Exit \nOption : ") 
     if activity.strip().capitalize()=="A":
         fill=True
         print("Type 'done' after finishing the product details")
