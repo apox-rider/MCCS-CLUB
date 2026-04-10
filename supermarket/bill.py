@@ -11,7 +11,7 @@ def record():
     time.sleep(4) 
     print("ACTIVITIES")
     activity=input("A:Input product details \nB:Exit \nOption : ") 
-    if activity.strip().capitalize()=="A":
+    if activity.strip().capitalize()=="A": 
         fill=True
         print("Type 'done' after finishing the product details")
         time.sleep(2)
@@ -22,7 +22,7 @@ def record():
                 break
             else:
                 try:
-                    quantity=int(input("Input product quantity : ")) 
+                    quantity=int(input("Input product quantity : "))  
                     units=input("Input product unit : ")
                     price=input("Input product unit price : ") 
                     register={
