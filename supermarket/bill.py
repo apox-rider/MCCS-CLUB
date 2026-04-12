@@ -5,9 +5,9 @@ detailList=[]
 prices=[]
 items=[] 
  
-def record():
+def record(): 
     time.sleep(3) 
-    print("Initializing system...")
+    print("Initializing system...") 
     time.sleep(4) 
     print("ACTIVITIES")
     activity=input("A:Input product details \nB:Exit \nOption : ") 
