@@ -2,9 +2,9 @@ import time
 from datetime import datetime
 
 detailList=[]
-prices=[]
-items=[]   
- 
+prices=[] 
+items=[]    
+  
 def record(): 
     time.sleep(3) 
     print("Initializing system...")  
