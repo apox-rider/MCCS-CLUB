@@ -20,7 +20,7 @@ def record():
             if product.lower().strip()=="done":
                 fill=False
                 break
-            else:
+            else: 
                 try:
                     quantity=int(input("Input product quantity : "))  
                     units=input("Input product unit : ")
