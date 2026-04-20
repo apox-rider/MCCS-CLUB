@@ -3,7 +3,7 @@ from datetime import datetime
 
 detailList=[]
 prices=[] 
-items=[]    
+items=[]     
   
 def record(): 
     time.sleep(3)   
