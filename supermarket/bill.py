@@ -14,8 +14,8 @@ def record():
     if activity.strip().capitalize()=="A": 
         fill=True 
         print("Type 'done' after finishing the product details")
-        time.sleep(2)  
-        while fill:
+        time.sleep(2)    
+        while fill:  
             product=input("Input product name : ")
             if product.lower().strip()=="done":
                 fill=False
