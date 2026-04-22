@@ -18,7 +18,7 @@ def record():
         while fill:  
             product=input("Input product name : ")
             if product.lower().strip()=="done":
-                fill=False
+                fill=False 
                 break
             else: 
                 try:
