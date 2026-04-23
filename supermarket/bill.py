@@ -2,7 +2,7 @@ import time
 from datetime import datetime
 
 detailList=[] 
-prices=[]  
+prices=[]   
 items=[]     
      
 def record(): 
