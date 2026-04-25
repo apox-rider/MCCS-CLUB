@@ -4,8 +4,8 @@ from datetime import datetime
 detailList=[] 
 prices=[]   
 items=[]      
-       
-def record(): 
+           
+def record():  
     time.sleep(3)   
     print("Initializing system...")     
     time.sleep(4)  
