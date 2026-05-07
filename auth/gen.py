@@ -18,7 +18,7 @@ def brute_force_cracker(target_pass):
             
             if guess == target_pass:
                 duration = time.time() - start_time
-                return guess, attempts, duration
+                return guess, attempts, duration  
     return None
 
 def verify_windows_password(username, password): 
